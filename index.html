@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>给妈妈的情书</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/love.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/diy.js"></script>
+</head>
+<body>
+<header class="am-topbar">
+    <h3 class="am-topbar-brand am-u-sm-12 logo">
+        <a href="#" class="">给妈妈的情书</a>
+    </h3>
+</header>
+<div class="container inputs">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <span>昵称：</span>
+                <input type="text" id="nickname" class="form-control input" placeholder="例如：宝贝儿子/女儿">
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="form-group">
+                <span>姓名：</span>
+                <input type="text" id="name" class="form-control" placeholder="例如：陈小明">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <span>生日：</span>
+                <input type="text" id="birthday" class="form-control" placeholder="例如:1995:01:01">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="but">
+                <div id="create_but" onclick="createUrl()" class="btn btn-info">生成专属地址</div>
+            </div>
+        </div>
+    </div>
+    <div  style="display:none" id="url_div">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <span>我的专属地址：</span>
+                    <textarea class="form-control" rows="3" id="diy_url"></textarea>
+                </div>
+            </div>
+        </div>
+        <!--<div class="row">-->
+            <!--<div class="col-xs-12 butcop">-->
+                <!--<button type="button" class="btn btn-info">复制地址</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+
+    <div class="comment">
+        <div class="row">
+            <div class="col-xs-8">
+                <p class="mfont"> 临行密密缝，意恐迟迟归。</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="mfont"> @陆游</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8">
+                <p class="mfont">她，不再，有力气管教我了。</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="mfont"> @神仙打鼓</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8">
+                <p class="mfont">先有鸡还是先有蛋，我不管，反正，先有你才有我。</p>
+            </div>
+            <div class="col-xs-4">
+                <p class="mfont"> @子牟</p>
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="mfont">更多好玩的请关注微信公众号：coder8023</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="mfont">如果您有疑问，请联系：tomxin7@163.com</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="mfont"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> star本程序源代码获取：<a href="https://github.com/tomxin7/MothersDay" target="_blank">点击这里</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/laydate.js"></script>
+<script>
+    //执行一个laydate实例
+    laydate.render({
+        elem: '#birthday' //指定元素
+    });
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?a36e1fb1365487d6cf93b2aa1015b97e";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+
+</html>
